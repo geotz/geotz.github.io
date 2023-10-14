@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" media="screen" href="default.css" />
+    <link rel="stylesheet" type="text/css" media="handheld" href="default.css" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>MS-DOS games and utitities (with source code)</title>
+  </head>
+  <body>
+
+<h1>Welcome to the world of MS-DOS!</h1>
+<blockquote><p> In the beginning it was plain DOS... It was about 1991, when I got my first computer. At that
+time I started programming in BASIC and Turbo Pascal (with a little of assembly). For about 7 years,
+I was writing programs for DOS. After that, I started developing software for Windows, but soon I
+fell in love with the Unix environment and completely abandoned the world of dos/dos oops... 
+dos/win I mean :-)</blockquote>
+
+<h2>Games</h2>
+<div style="float: left;">
+<A HREF="http://quiz.ravenblack.net/videogame.pl">
+<IMG SRC="http://quiz.ravenblack.net/videogame/14.png" TITLE="Take the quiz" ALT="What Video Game Character Are You? I am a Gauntlet Adventurer." /></A></div>
+<blockquote>I strive to improve my living conditions by hoarding gold, food, and sometimes keys and potions. I
+love adventure, fighting, and particularly winning - especially when there's a prize at stake. I
+occasionally get lost inside buildings and can't find the exit. I need food badly! :-)
+</blockquote>
+
+<div style="clear: left;"></div>
+
+<div class="box">
+<div class="name">Master Mind</div>
+  <dl><dt><a href="mmind.pas">mmind.pas</a></dt>
+  <dd> You can try to guess the computer's number, or let
+      the computer guess <i>your</i> number using the minimum number of efforts!
+  </dd>
+  </dl>
+</div>
+
+
+<div class="box">
+<div class="name">Nibbles</div>
+  <dl><dt><a href="nibbles.zip">nibbles.zip</a> (c source & binary)</dt>
+  <dd>The well known Nibbles game. It supports many players concurrently!
+  </dd>
+  </dl>
+  <div class="shot"><img src="img/nibbles.png"></div>
+</div>
+
+
+<div class="box">
+<div class="name">Score 4</div>
+<dl><dt><a href="score4.zip">score4.zip</a> (pascal source & binary)</dt>
+<dd>The classical game Connect Four (also known as Score 4).
+    The game's AI is far from perfect (but might beat you easily if you are not careful).
+    I wrote this game when I had no idea of AI algorithms! :-) If you are interested
+    in Connect Four, then check also the following:
+    <ul>
+    <li><a href="http://www.ce.unipr.it/~gbe/velena.html">Velena</a> - Perfect play - first player always wins!
+    <li><a href="http://www.pomakis.com/c4/">Keith Pomakis' n-In-A-Row page</a>
+    <li>See <a href="https://github.com/geotz/connect_four">here</a> for a modern C++/<a href="http://www.sfml-dev.org">SFML</a> remake
+    </ul>
+    </dd></dl>
+    <div class="shot"><img src="img/score4.png"></div>
+</div>    
+
+<div class="box">
+<div class="name">Ms Pacman</div>
+<dl><dt><a href="mspacgt.zip">mspacgt.zip</a> (pascal source & binary)</dt>
+<dd>An Ms Pacman game.</dd></dl>
+    <div class="shot"><img src="img/mspacgt.png"></div>
+</div>    
+
+<div style="clear: left;"></div>
+
+<div class="box">
+<div class="name">RA</div>
+<dl><dt><a href="ra.zip">ra.zip</a> (pascal source & binary)</dt>
+<dd>An arcade/platform game. Idea and graphics were stolen 
+from <a href="http://en.wikipedia.org/wiki/Pharaoh's_Tomb">Pharaoh's Tomb!</a> (sorry).
+</dd></dl>
+    <div class="shot"><img src="img/ra.png"></div>
+</div>    
+
+<div class="box">
+<div class="name">RA 2</div>
+<dl><dt><a href="ra2.zip">ra2.zip</a> (DJGPP c++ source & binary)</dt>
+<dd>Second version of RA. Now with scrolling and more colors! 
+Uses the <a href="http://www.talula.demon.co.uk/allegro/">Allegro</a> 
+multi-platform game library. 
+I guess porting to linux would be easy (thanks to Allegro). If you do it, send me a copy!
+</dd></dl>
+    <div class="shot"><img src="img/ra2.png"></div>
+</div>    
+
+<div class="box">
+<div class="name">Turbo Pascal Units</div>
+<dl><dt><a href="gtunits.zip">gtunits.zip</a></dt>
+<dd>
+You will need some of these units to compile the pascal games.
+<table>
+<tr><td width="20%">advanced.pas<td>various advanced routines (indosflag,bload,bsave,etc.)
+<tr><td>ansi.pas<td>convert a string to ansi-escapes and vice versa
+<tr><td>basic.pas<td>various text mode routines (gettext/puttext/colors/frames/etc.)
+<tr><td>bios.pas<td>bios disk drive routines (read/write/format)
+<tr><td>crt2.pas<td>fast text i/o unit
+<tr><td>fade.pas<td>fade in/out (palette effect)
+<tr><td>keyb2.pas<td>keyboard flags (shift/capslock/etc.)
+<tr><td>keyboard.pas<td>crt's readkey/keypressed replacement
+<tr><td>math.pas<td>some math routines
+<tr><td>mouse.pas<td>mouse support unit
+<tr><td>movsb.pas<td>assembly string operations (with 32-bit support)
+<tr><td>patch.pas<td>file patching
+<tr><td>protect.pas<td>checksum copy protection
+<tr><td>sbaudio.pas<td>sound blaster audio (low level)
+<tr><td>strhan.pas<td>string handling routines
+<tr><td>textfont.pas<td>bios text fonts
+<tr><td>timer.pas<td>timer routines
+<tr><td>vga.pas<td>vga 320x200 8bit graphics unit
+<tr><td>xargs.pas<td>argument handling
+<tr><td>xsound.pas<td>high level audio routines (for games)
+</table>
+</dd></dl>
+</div>    
+
+<h2>Utilities</h2>
+
+ <div class="box">
+    <div class="name">File &amp; Disk Utilities</div>
+    <dl>
+    <dt><a href="fsplit.pas">fsplit.pas</a></dt>
+    <dd>Split large files in smaller pieces with this utility.</dd>
+    
+    <dt><a href="go.pas">go.pas</a></dt>
+    <dd>Search the directory tree in BFS order and change to the directory specified.</dd>
+    
+    <dt><a href="timex.pas">timex.pas</a></dt>
+    <dd>This program allows you to time the execution of another program and
+    can warn you in real-time if the time limit has been exceeded. It also tries
+    to detect if the target program has messed with the timer! ;-)</dd>
+    </dl>
+  </div>
+  
+  <div class="box">
+  <div class="name">TSR Programs</div>
+  <dl>
+  <dt><a href="alarm.pas">alarm.pas</a></dt>
+  <dd>This program demonstrates the use of the alarm feature
+    of BIOS. It actually locks up the computer in about a minute!
+    Of course, you should compile this to disk first and then load the .exe
+    file. This is common for turbo pascal memory resident programs using Keep().</dd>
+    
+  <dt><a href="crazykey.pas">crazykey.pas</a></dt>
+  <dd>Heh, this is fun. This is a memory resident program that
+"eats up" some keypresses of the cursor (arrow) keys. 
+I wrote this program because my sister played a silly game all the
+time and didn't let me use the computer! :-D Load
+this program and play a game that is using the cursor keys (like pacman) to
+see for yourself.</dd>
+  </dl>
+  </div>
+
+
+
+</body>
+</html>
+

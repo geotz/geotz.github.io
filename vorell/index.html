@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- ======================= HEAD ======================== -->
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<!-- <meta name="description" content="description"/>
+<meta name="keywords" content="keywords"/>
+<meta name="author" content="author"/> -->
+<link rel="stylesheet" type="text/css" href="../default.css" media="screen"/>
+<title>Voronoi diagram of ellipses - George Tzoumas' web page</title>
+</head>
+
+<!-- ======================= BODY ======================== -->
+
+<body>
+
+<div class="container">
+
+	<div class="navigation">
+
+		<div class="title">
+		<h1>Voronoi diagram<br>of ellipses</h1>
+		</div>
+
+                <a href="../index.html">Main</a>
+                <a href="../soft.html">Software</a>
+		<div class="clearer"><span></span></div>
+
+	</div>
+
+	<div class="holder_top"></div>
+
+	<div class="holder">
+
+<p>This page is about the Voronoi diagram of ellipses, under the <em>Exact Computation
+Paradigm</em>. The project started as part of my PhD. Applying exact computation
+on this problem turns out to be quite demanding, requiring handling of algebraic
+numbers of <em>degree 184</em> (among other things). Fore more information, check out my
+<a href="../bib/pubs.html">publications</a>.
+<h1>C++ implementation</h1>
+<p>The source code lies in
+<a href="http://www.cgal.org/">CGAL</a>'s <a href="https://github.com/CGAL/cgal-public-dev/tree/Voronoi_diagram_of_ellipses_2-gtzoumas">cgal-public-dev</a> github repository.
+Unfortunately, this version is no longer maintained (and also has <em>nothing to do</em> with modern C++ since I wrote it more than
+10 years ago when I was still learning...). It is quite likely that changes are required for the code to compile
+with a more recent CGAL version.
+<p> However, I am in the process of refactoring it towards a <strong>C++17</strong> version which is already pushing CGAL to its limits (e.g. missing move semantics :P)  
+	The new version also provides improved handling of algebraic points at infinity and high quality rendering via <a href="http://asymptote.sourceforge.net">Asymptote</a>).
+The code will soon be available (as work-in-progress) through my <a href="https://github.com/geotz/">personal</a> github repository.
+
+<p>Here are two screenshots of the old Qt4 demo:
+<p align=center>
+<img src="new_pc.png">
+<img src="vorell_new2b.png" >
+
+<h2>More Screenshots (old Qt3 version)</h2>
+<p align=center>
+<a href="vorell01.png"><img src="vorell01s.png"></a>
+<a href="vorell02.png"><img src="vorell02s.png"></a>
+<br>
+<a href="vorell03.png"><img src="vorell03s.png"></a>
+<a href="vorell04.png"><img src="vorell04s.png"></a>
+
+<p>
+<h2>Instructions for the old version:</h2>
+<p>To compile the source you need:
+<ul>
+<li> The components <em>algebrix</em>,
+<em> realroot</em> and <em>subdivix</em> of the
+<a href="http://gforge.inria.fr/projects/mmx/">mmx</a> library.
+<li> The <a href="http://www.shoup.net/ntl/">NTL</a> library (you should choose GMP support when building).
+<li>
+The <a href="http://www.cgal.org/">CGAL</a> library version 3.3.1.
+</ul>
+
+<blockquote><em>WARNING: This public version of the source is outdated,
+and might not even compile with newer versions of SYNAPS/MMX.
+Please, use the newer version in CGAL's repository.</em>
+</blockquote>
+
+<p> First public release (Dec 8, 2007): <a href="vorell-0.1.0.tar.gz">vorell-0.1.0.tar.gz</a>
+<p>
+
+	</div>
+
+	<div class="footer">
+
+        <div class="left">
+		  <!-- [page last modified: 17 Oct, 2016] -->
+		  [page last modified: 18 Apr, 2018]
+        </div>
+
+		<div class="right">
+			<a href="http://templates.arcsin.se/">Website template</a> by <a href="http://arcsin.se/">Arcsin</a>
+		</div>
+
+		<div class="clearer">&nbsp;</div>
+
+	</div>
+
+</div>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=6032937;
+var sc_invisible=1;
+var sc_security="be7f8e4e";
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="godaddy tracker"
+href="http://www.statcounter.com/godaddy_website_tonight/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/6032937/0/be7f8e4e/1/"
+alt="godaddy tracker" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</body>
+
+</html>

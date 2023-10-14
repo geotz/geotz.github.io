@@ -1,0 +1,100 @@
+html {
+    background-color: black;
+    color: Cyan;
+}
+
+h2 {
+    clear: left;
+}
+
+blockquote {
+    text-align: justify;
+    font-family: serif;
+    font-style: italic;
+    padding: 1em;
+    max-width: 464px;
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+}
+
+.floatleft {
+    float: left;
+}
+
+.box {
+	font-family: sans-serif;
+	border: 1px solid black;
+	background-color: Black;
+	color: Cyan;
+	box-shadow: 5px 5px 2px #000060;
+	margin-bottom: 1em;
+	margin-right: 1em;
+	float: left;
+	max-width: 464px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: Blue;
+}
+
+.box a {
+    color: Magenta;
+}
+
+.box a:hover {
+    color: Pink;
+}
+
+.box dl {
+    padding: 1em;
+}
+
+.box dt {
+    color: Magenta;
+    font-weight: bold;
+}
+
+.box dd {
+    color: Lime;
+    font-style: italic;
+//    font-family: serif;
+    text-align: justify;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.box table {
+    color: Cyan;
+    font-style: normal;
+    text-align: left;
+    padding: 1em;
+    border-collapse: collapse;
+}
+
+.box td {
+    border-style: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+    padding: 2px;
+    border-color: #505050;
+}
+
+.shot {
+    text-align: center;
+    padding-bottom: 1em;
+}
+.name {
+	font-weight: bold;
+	text-align: center;
+	color: Yellow;
+	background-color: Blue;
+	padding: 3px;
+}
+
+.desc {
+	font-style: italic;
+	font-family: serif;
+	text-align: justify;
+	padding: 0em 1em 1em 1em;
+}
+
